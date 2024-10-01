@@ -6,9 +6,12 @@ height: 100vh;
 background-color: rgb(196, 196, 239);
 }
 .container{
-width:20%;
-/* margin:10px auto; */
-
+width:20rem;
+}
+@media screen and (max-width:29.375em) {
+    .container{
+        width:70vw;
+        }  
 }
 .carousel{
 height: 300px;
@@ -60,6 +63,11 @@ padding:.3rem
 }
 .describe{
 font-size: 1rem;
+}
+@media screen and (max-width:16.875em) {
+    .describe{
+        font-size: 6vw;
+        }  
 }
 .controls .arrow{
     position: absolute;
