@@ -1,29 +1,65 @@
-.container{
-width: 30%;
-margin:10px auto;
+.overall-container{
 display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: rgb(196, 196, 239);
+}
+.container{
+width:20%;
+/* margin:10px auto; */
+
 }
 .carousel{
-border: 2px solid #ccc;
-height: 400px;
+height: 300px;
 position: relative;
 overflow: hidden;
+background-color: white;
+padding: .5rem;
+border-radius: 1rem;
+
 
 }
 .slider{
 height: 100%;
 display:flex;
 width: 400%;
-border: 1px solid red;
-transition: all 0.3s;
+transition: all 0.4s;
 
 }
 .slider section{
     flex-basis: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
+}
+.image-div{
+background-color: red;
+width: 90%;
+height: 10rem;
+margin-top: 1rem;
+margin-left: auto;
+margin-right: auto;
+border-radius: 2rem;
+}
+.actual-img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 1rem;
+}
+.text-box{
+padding-inline: .5rem;
+}
+.heading-title{
+color: white;
+border-radius: 1rem;
+width: max-content;
+padding:.3rem
+}
+.describe{
+font-size: 1rem;
 }
 .controls .arrow{
     position: absolute;
