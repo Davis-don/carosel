@@ -1,52 +1,64 @@
-*{
-border: 0px;
-margin: 0px;
-box-sizing: border-box;
-}
-html{
-font-size: 62.5%;
-}
-.app{
+.container{
+width: 30%;
+margin:10px auto;
 display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-background-color: rgb(195, 195, 235);
 }
-.carosel-card-ovearall{
-width: 40rem;
-height: 40rem;
-background-color:white;
-border-radius: 2rem;
-}
-.image-card-holder{
-width: 90%;
-height: 20rem;
-background-color: black;
-margin: auto;
-margin-top: 2rem;
-border-radius: 2rem;
-}
-.carosel-img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-border-radius: 2rem;
-}
-.carosel-text-box{
-padding: 1rem;
-}
-.carosel-title{
-width: max-content;
-background-color: rgb(161, 234, 161);
-padding: .5rem;
-border-radius:.5rem;
-}
-.carosel-description-text{
-font-size: 1.5rem;
-padding: 1rem;
+.carousel{
+border: 2px solid #ccc;
+height: 400px;
+position: relative;
+overflow: hidden;
 
 }
-.chevron-icon{
-font-size: 8rem;
+.slider{
+height: 100%;
+display:flex;
+width: 400%;
+border: 1px solid red;
+transition: all 0.3s;
+
+}
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 60px;
+}
+
+.arrow.left{
+    left: 10px;
+}
+.arrow.right{
+right: 10px;
+}
+.controls ul{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+list-style: none;
+display: flex;
+padding: 0px;
+margin: 0px;
+}
+.controls ul li{
+width: 14px;
+height: 14px;
+border: 2px solid #333;
+border-radius: 50px;
+margin: 10px;
+background-color: #333;
+cursor: pointer;
+
+}
+.controls ul li.selected{
+background: transparent;
 }
